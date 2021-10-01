@@ -1,7 +1,7 @@
 pipeline{
 
     agent {
-        label 'workernode1'
+        label 'wokernode1'
     }
 
     stages{
