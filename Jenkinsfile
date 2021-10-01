@@ -1,16 +1,18 @@
 pipeline{
 
-  agent{
-    label 'workernode1'
-    
-      }
-      
-        stages{
-          stage("checking terraform installation")
+    agent {
+        label 'workernode1'
+    }
+
+    stages{
+        stage("checking terraform installation"){
             steps{
+
+                sh "terraform -version"
+
+            }
+
             
-              sh "terraform -version"
-              }
-             }
-          
         }
+    }
+}
