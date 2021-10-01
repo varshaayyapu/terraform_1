@@ -6,11 +6,11 @@ pipeline{
       }
       
         stages{
-          stage("checking terraform installation")}
+          stage("checking terraform installation")
             steps{
             
               sh "terraform -version"
               }
              }
-           }
+          
         }
